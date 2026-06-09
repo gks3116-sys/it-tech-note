@@ -5,7 +5,14 @@
     <link>https://gks3116-sys.github.io/it-tech-note/</link>
     <description>기술사 토픽, DB, IT 전반 지식을 정리하는 기술 노트</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 09 Jun 2026 03:47:35 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 03:52:05 GMT</lastBuildDate>
+    <item>
+      <title>ITSM과 IT 거버넌스 한 번에 정리 — ISO 20000·ITIL 4·BSC 핵심 + 암기 두음</title>
+      <link>https://gks3116-sys.github.io/it-tech-note/posts/itsm-it-governance.html</link>
+      <guid>https://gks3116-sys.github.io/it-tech-note/posts/itsm-it-governance.html</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <description>정보관리기술사 대비 ITSM·IT 거버넌스 핵심 정리. ISO 20000, ITIL 4, SLA/SLM, BSC 개념과 암기 두음까지 한 번에 정리했습니다.</description>
+    </item>
     <item>
       <title>IT Tech Note를 시작하며</title>
       <link>https://gks3116-sys.github.io/it-tech-note/posts/welcome-it-tech-note.html</link>

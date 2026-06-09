@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "IT Tech Note",
+    "description": "기술사 토픽, DB, IT 전반 지식을 정리하는 기술 노트",
+    "url": "https://example.com",
+    "author": "한프로",
+    "language": "ko"
+  },
+  "categories": [
+    { "id": "engineer", "name": "기술사 토픽", "description": "정보관리기술사 시험·실무 토픽 정리" },
+    { "id": "database", "name": "DB 토픽", "description": "데이터베이스 운영·튜닝·아키텍처" },
+    { "id": "general", "name": "IT 전반 지식", "description": "소프트웨어·보안·AI·인프라 전반" }
+  ],
+  "articles": [
+    {
+      "id": "welcome-it-tech-note",
+      "title": "IT Tech Note를 시작하며",
+      "category": "general",
+      "date": "2026-06-08",
+      "summary": "기술사 토픽, DB, IT 전반 지식을 기록하는 공간을 열었습니다. 블로그의 방향과 구성을 소개합니다.",
+      "keywords": ["IT", "기술블로그", "정보관리기술사"],
+      "path": "posts/welcome-it-tech-note.html",
+      "readingMinutes": 3
+    }
+  ]
+}

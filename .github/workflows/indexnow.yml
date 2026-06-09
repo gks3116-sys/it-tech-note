@@ -1,1 +1,30 @@
+name: IndexNow Submit
 
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'posts/**'
+      - 'articles.json'
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Submit URLs to IndexNow
+        run: |
+          KEY="${{ secrets.INDEXNOW_KEY }}"
+          if [ -z "$KEY" ]; then echo "INDEXNOW_KEY 미설정 — 스킵"; exit 0; fi
+          HOST=$(node -e "console.log(require('./articles.json').site.url.replace(/https?:\/\//,'').replace(/\/$/,''))")
+          node -e "
+            const d=require('./articles.json');
+            const site=d.site.url.replace(/\/\$/,'');
+            const urls=[site+'/', ...d.articles.map(a=>site+'/'+a.path)];
+            console.log(JSON.stringify({host:'$HOST',key:'$KEY',keyLocation:site+'/$KEY.txt',urlList:urls}));
+          " > payload.json
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            --data @payload.json && echo "✓ IndexNow 제출 완료"

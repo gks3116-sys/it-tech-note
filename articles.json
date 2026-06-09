@@ -13,6 +13,16 @@
   ],
   "articles": [
     {
+      "id": "itsm-it-governance",
+      "title": "ITSM과 IT 거버넌스 한 번에 정리 — ISO 20000·ITIL 4·BSC 핵심 + 암기 두음",
+      "category": "engineer",
+      "date": "2026-06-09",
+      "summary": "정보관리기술사 대비 ITSM·IT 거버넌스 핵심 정리. ISO 20000, ITIL 4, SLA/SLM, BSC 개념과 암기 두음까지 한 번에 정리했습니다.",
+      "keywords": ["정보관리기술사", "ITSM", "IT거버넌스", "ITIL4", "ISO20000", "BSC"],
+      "path": "posts/itsm-it-governance.html",
+      "readingMinutes": 7
+    },
+    {
       "id": "welcome-it-tech-note",
       "title": "IT Tech Note를 시작하며",
       "category": "general",
@@ -22,5 +32,4 @@
       "path": "posts/welcome-it-tech-note.html",
       "readingMinutes": 3
     }
-  ]
 }
